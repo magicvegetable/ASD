@@ -19,7 +19,7 @@ int main() {
 }
 
 long double recursion(int itemIndex, int amountOfOperations, long double firstItem, long double sum, long double nextItem) {
-  long double res;
+  long double res = firstItem;
   if(itemIndex < amountOfOperations) {
     nextItem *= - firstItem * itemIndex / (itemIndex + 1);
     sum += nextItem;
